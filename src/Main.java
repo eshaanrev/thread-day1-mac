@@ -15,5 +15,8 @@ public class Main {
         for (Thread thread : threads) {
             thread.start();
         }
+        for (Thread thread : threads) {
+            thread.join();
+        }
     }
 }
