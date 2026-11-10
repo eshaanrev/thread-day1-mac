@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) throws InterruptedException {
+        long startTime = System.nanoTime();
+
         Thread[] threads = new Thread[1000];
         long[] totals = new long[1000];
         for (int i = 0; i < threads.length; i++) {
@@ -22,6 +24,8 @@ public class Main {
         for (long total : totals) {
             grandTotal += total;
         }
+        double seconds = (System.nanoTime() - startTime) / 1_000_000_000.0;
         System.out.println("Total: " + grandTotal);
+        System.out.println("Time: " + seconds + " seconds");
     }
 }
