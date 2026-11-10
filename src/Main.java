@@ -18,5 +18,10 @@ public class Main {
         for (Thread thread : threads) {
             thread.join();
         }
+        long grandTotal = 0;
+        for (long total : totals) {
+            grandTotal += total;
+        }
+        System.out.println("Total: " + grandTotal);
     }
 }
