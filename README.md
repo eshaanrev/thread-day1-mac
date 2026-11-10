@@ -40,3 +40,7 @@ Expected total: `500000500000000`. Elapsed time varies. Java 21 is installed; `-
 The Day 1 numbered requirements ask for sums, so this project preserves that behavior. It performs one billion additions but does not sum the unique range 1 through one billion. Day 2's review wording asks for a count; that separate project returns one billion.
 
 This recreation was prepared on macOS with GitKraken and Java. It was not created in IntelliJ: the user's instruction explicitly waived IntelliJ. No claim is made otherwise.
+
+## Verification
+
+Compiled with javac --release 19 and executed on this Mac. Observed total: 500000500000000. All staged development versions also compile. Generated .class files are ignored by Git.
